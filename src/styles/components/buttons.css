@@ -109,6 +109,7 @@
 
 /* Specific Button Variants */
 .btn-signin {
+    margin-top: 1rem;
   width: 100%;
   padding: 0.875rem 1.5rem;
   background-color: var(--color-blue);
@@ -162,12 +163,12 @@
   width: 100%;
   max-width: 320px;
   padding: 0.875rem 1.5rem;
-  border: 2px solid black;
   color: black;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: var(--radius-lg);
-  background-color: transparent;
+  background-color: white;
   box-shadow: var(--shadow-sm);
+    border: 2px solid black;
 }
 
 .btn-google:hover:not(:disabled) {

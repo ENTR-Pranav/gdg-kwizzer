@@ -3,12 +3,38 @@
    ============================================ */
 
 .app-layout {
-  min-height: 100vh;
-  background-color: white;
-  color: black;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .app-main {
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 2rem 1rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+
+    /* RADIAL GRADIENT: Light starts at Top-Right (100% 0%) */
+    background: radial-gradient(
+            ellipse 100% 70% at 100% 0%,
+            var(--glow-smoky) 10%,    /* Spreads the brightness to half the page */
+            var(--deep-navy) 100%     /* Soft finish at the bottom-left */
+    ) !important;
+
+    color: var(--foreground);
+}
+.glass-container{
+    backdrop-filter: blur(200px);
 }
