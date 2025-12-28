@@ -1,15 +1,24 @@
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --primary: #000000;
-  --primary-foreground: #ffffff;
-  --secondary: #ffffff;
-  --secondary-foreground: #000000;
-  --muted: #ffffff;
-  --muted-foreground: #000000;
-  --border: #000000;
-  --input: #ffffff;
-  --ring: #000000;
+    /* Core Backgrounds */
+    --background: #0b121e;        /* Deep dark blue/black */
+    --foreground: #ffffff;        /* Primary white text */
+
+    /* Component Colors */
+    --primary: #435c7c;           /* Muted teal/blue for buttons */
+    --primary-foreground: #ffffff;
+
+    --secondary: #1a2435;         /* Lighter blue-grey for Cards/Inputs */
+    --secondary-foreground: #94a3b8; /* Muted grey text for labels */
+
+    /* Structural Elements */
+    --muted: #1e293b;
+    --muted-foreground: #64748b;
+    --border: #2e3c51;            /* Subtle borders for inputs/cards */
+    --input: #161f2e;             /* Darker input background */
+    --ring: #3b82f6;              /* Focus ring color */
+
+    /* Layout Spacing */
+    --radius: 12px;               /* Consistent rounding */
 }
 
 *,
