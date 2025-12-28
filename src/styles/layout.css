@@ -13,6 +13,7 @@
     justify-content: center;
     flex: 1;
 }
+
 .app-container {
     width: 100%;
     max-width: 480px;
@@ -29,12 +30,22 @@ html, body {
     /* RADIAL GRADIENT: Light starts at Top-Right (100% 0%) */
     background: radial-gradient(
             ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%,    /* Spreads the brightness to half the page */
-            var(--deep-navy) 100%     /* Soft finish at the bottom-left */
+            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--deep-navy) 100% /* Soft finish at the bottom-left */
     ) !important;
 
     color: var(--foreground);
 }
-.glass-container{
-    backdrop-filter: blur(200px);
+
+.glass-container {
+    width: 100%;
+    max-width: 320px;
+    gap: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(70px);
+    border-radius: 0.75rem;
+    background: radial-gradient(
+            ellipse 100% 70% at 100% 0%,
+            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
+    ) !important;
+    color: var(--foreground);
 }
