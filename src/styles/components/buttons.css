@@ -111,7 +111,7 @@
 .btn-signin {
   width: 100%;
   padding: 0.875rem 1.5rem;
-  background-color: var(--color-blue);
+  background-color: #075985;
   color: white;
   font-weight: 700;
   border-radius: var(--radius-lg);
@@ -120,7 +120,7 @@
 }
 
 .btn-signin:hover:not(:disabled) {
-  background-color: var(--color-blue-hover);
+  background-color: #0c4a6e;
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
@@ -130,13 +130,13 @@
 }
 
 .btn-signin:disabled {
-  background-color: var(--color-blue-light);
+  background-color: #7ea9bc;
 }
 
 .btn-signup {
   width: 100%;
   padding: 0.875rem 1.5rem;
-  background-color: var(--color-green);
+  background-color: #075985;
   color: white;
   font-weight: 700;
   border-radius: var(--radius-lg);
@@ -145,7 +145,7 @@
 }
 
 .btn-signup:hover:not(:disabled) {
-  background-color: var(--color-green-hover);
+  background-color: #0c4a6e;
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
@@ -155,23 +155,23 @@
 }
 
 .btn-signup:disabled {
-  background-color: var(--color-green-light);
+  background-color: #7ea9bc;
 }
 
 .btn-google {
   width: 100%;
   max-width: 320px;
   padding: 0.875rem 1.5rem;
-  border: 2px solid black;
-  color: black;
+  border: none;
+  color: white;
   font-weight: 700;
   border-radius: var(--radius-lg);
-  background-color: transparent;
+  background-color: #075985;
   box-shadow: var(--shadow-sm);
 }
 
 .btn-google:hover:not(:disabled) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #0c4a6e;
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -193,12 +193,13 @@
   border-radius: var(--radius-lg);
   cursor: pointer;
   transition: all var(--transition-normal);
-  border: 2px solid black;
+  border: 2px solid #082f49;
   position: relative;
   overflow: hidden;
 }
 
 .home-button::before {
+  color: #082f49;
   content: '';
   position: absolute;
   top: 0;
@@ -215,12 +216,13 @@
 
 .home-button-outline {
   background-color: white;
-  color: black;
+  color: #082f49;
+  border: 2px solid #082f49;
   box-shadow: var(--shadow-md);
 }
 
 .home-button-outline:hover {
-  background-color: black;
+  background-color: #082f49;
   color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
@@ -231,13 +233,13 @@
 }
 
 .home-button-filled {
-  background-color: black;
+  background-color: #082f49;
   color: white;
   box-shadow: var(--shadow-md);
 }
 
 .home-button-filled:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #0c4a6e;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -248,17 +250,17 @@
 
 .home-signout-button {
   background-color: transparent;
-  color: black;
+  color: #082f49;
 }
 
 .home-signout-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #e4e4e7;
 }
 
 /* Join Page Buttons */
 .join-page-signin-button {
   padding: 0.875rem 2rem;
-  background-color: var(--color-blue);
+  background-color: #082f49;
   color: white;
   font-weight: 700;
   border-radius: var(--radius-lg);
@@ -269,7 +271,7 @@
 }
 
 .join-page-signin-button:hover {
-  background-color: var(--color-blue-hover);
+  background-color: #0c4a6e;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -281,7 +283,7 @@
 .join-find-button {
   width: 100%;
   padding: 1rem 1.5rem;
-  background-color: var(--color-blue);
+  background-color: #082f49;
   color: white;
   font-size: 1.125rem;
   font-weight: 700;
@@ -293,7 +295,7 @@
 }
 
 .join-find-button:hover:not(:disabled) {
-  background-color: var(--color-blue-hover);
+  background-color: #0c4a6e;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -303,15 +305,16 @@
 }
 
 .join-find-button:disabled {
-  background-color: var(--color-blue-light);
+  background-color: #7ea9bc;
+  opacity: 0.5;
   cursor: not-allowed;
 }
 
 .join-back-button {
   flex: 1;
   padding: 0.875rem 1rem;
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #082f49;
+  color: #082f49;
   font-weight: 700;
   border-radius: var(--radius-lg);
   background-color: transparent;
@@ -320,7 +323,7 @@
 }
 
 .join-back-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #e4e4e7;
   transform: translateY(-1px);
 }
 
@@ -331,7 +334,7 @@
 .join-join-button {
   flex: 1;
   padding: 0.875rem 1rem;
-  background-color: var(--color-green);
+  background-color: #075985;
   color: white;
   font-weight: 700;
   border-radius: var(--radius-lg);
@@ -342,7 +345,7 @@
 }
 
 .join-join-button:hover:not(:disabled) {
-  background-color: var(--color-green-hover);
+  background-color: #082f49;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -359,7 +362,7 @@
 /* Game Error Button */
 .game-error-button {
   padding: 0.625rem 1.25rem;
-  background-color: black;
+  background-color: #075985;
   color: white;
   border-radius: var(--radius-md);
   border: none;
@@ -370,7 +373,7 @@
 }
 
 .game-error-button:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #082f49;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -380,23 +383,24 @@
 }
 
 /* Host Control Buttons */
+
 .host-control-button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.875rem 1.75rem;
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  background-color: #075985;
+  color: white;
+  border: none;
+  outline: none;
   font-weight: 700;
   border-radius: var(--radius-lg);
   cursor: pointer;
   transition: all var(--transition-normal);
-  box-shadow: var(--shadow-sm);
 }
 
 .host-control-button:hover:not(:disabled) {
-  background-color: black;
+  background-color: #082f49;
   color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -417,16 +421,16 @@
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: var(--radius-lg);
-  background-color: var(--color-blue);
+  background-color: #075985;
   color: white;
-  border: 2px solid var(--color-blue);
+  border: none;
   cursor: pointer;
   transition: all var(--transition-normal);
   box-shadow: var(--shadow-md);
 }
 
 .host-create-button:hover:not(:disabled) {
-  background-color: var(--color-blue-hover);
+  background-color: #082f49;
   border-color: var(--color-blue-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
@@ -445,14 +449,18 @@
   flex: 1;
   font-size: 1.125rem;
   padding: 1rem 1.5rem;
-  box-shadow: var(--shadow-md);
+  background-color: #075985;
+  color: white;
+  border-radius: 8px;
+  border: none;
+
   transition: all var(--transition-normal);
   font-weight: 700;
 }
 
 .host-start-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  background-color: #082f49;
 }
 
 .host-start-button:active:not(:disabled) {
@@ -460,12 +468,31 @@
 }
 
 .host-back-button {
+  background-color: #075985;
+  padding: 12.5px 0px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
   width: 100%;
+  transition: all var(--transition-normal);
+}
+
+.host-back-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background-color: #082f49;
+}
+
+.host-back-button:active:not(:disabled) {
+  transform: scale(0.98) translateY(0);
+  
 }
 
 /* Delete Buttons */
 .quiz-card-delete-button,
-.quiz-detail-delete-button {
+.quiz-detail-delete-button,
+.create-question-remove-button {
   background-color: white;
   color: var(--color-red);
   border: 2px solid var(--color-red);
@@ -474,7 +501,8 @@
 }
 
 .quiz-card-delete-button:hover,
-.quiz-detail-delete-button:hover {
+.quiz-detail-delete-button:hover,
+.create-question-remove-button:hover {
   background-color: var(--color-red);
   color: white;
   border-color: var(--color-red);
@@ -487,20 +515,219 @@
 }
 
 /* Create Quiz Buttons */
+
+
+/* Create Quiz Buttons */
 .create-add-button {
   width: 100%;
+  background-color: #075985;
+  border-radius: 8px;
+  border: none;
+  color: white;
   padding: 0.875rem 1.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  transition: all var(--transition-normal);
 }
-
+.create-add-button:hover:not(:disabled){
+  background-color: #082f49;
+  transform: translateY(-1px);
+}
 .create-cancel-button {
   flex: 1;
 }
 
 .create-cancel-button-inner {
   width: 100%;
+  background-color: #991b1b;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 0.875rem 1.5rem;
+  font-weight: 700;
+  transition: all var(--transition-normal);
 }
-
+.create-cancel-button-inner:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #7f1d1d;
+}
 .create-submit-button {
   flex: 1;
+  background-color: #047857;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 0.875rem 1.5rem;
+  font-weight: 700;
+  transition: all var(--transition-normal);
+}
+.create-submit-button:hover:not(:disabled){
+  
+  background-color: #064e3b;
+  transform: translateY(-1px);
+  
+}
+
+/* Manage Quizzes Button */
+
+.quizzes-back-button{
+  background-color: transparent;
+  padding: 0.875rem 1.5rem;
+  color: #082f49;
+  font-size: 13px;
+  border: 2px solid #082f49;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+
+}
+
+.quizzes-back-button:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #082f49;
+  color: white;
+
+}
+.quizzes-create-quiz-button{
+  color: white;
+  padding: 0.900rem 1.5rem;
+  background-color: #075985;
+  font-size: 13px;
+  border:none;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+
+}
+
+.quizzes-create-quiz-button:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #082f49;
+  
+  
+}
+
+/* Manage Quiz > quiz-card-actions buttons */
+
+.quiz-card-actions button{
+  padding: 0.500rem 1.5rem;
+  color: #082f49;
+  font-size: 13px;
+  border: 2px solid #082f49;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+
+
+}
+.quiz-card-edit-button:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #082f49;
+  color: white;
+}
+.quiz-card-host-button:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #0369a1;
+  color: white;
+}
+
+
+/* Manage Quiz > edit > quiz-detail-button-group buttons */
+
+
+.quiz-detail-button-group button {
+  padding: 0.500rem 1.5rem;
+  color: #082f49;
+  font-size: 13px;
+  border: 2px solid #082f49;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+
+
+}
+.quiz-detail-back-button:hover:not(:disabled){
+  background-color: #082f49;
+  color: white;
+  transform: translateY(-1px);
+
+}
+.quiz-detail-host-button:hover:not(:disabled){
+  transform: translateY(-1px);
+  background-color: #0369a1;
+  color: white;
+
+}
+
+/* quiz edit cancel and save buttons */
+
+.quiz-edit-save-button{
+  background-color: transparent;
+  padding: 2px 5px;
+  margin-top: 6px;
+  color: #082f49;
+  border: 2px solid #082f49;
+  border-radius: var(--radius-sm);
+  margin-right: 7.5px;
+
+}
+
+.quiz-edit-save-button:hover:not(:disabled){
+  color: white;
+  background-color: #075985;
+  border: 2px solid #075985;
+
+
+}
+.quiz-edit-cancel-button{
+  background-color: transparent;
+  padding: 2px 5px;
+  margin-top: 6px;
+  color: #082f49;
+  border: 2px solid #082f49;
+  border-radius: var(--radius-sm);
+  
+}
+
+.quiz-edit-cancel-button:hover:not(:disabled){
+  color: white;
+  background-color: var(--color-red);
+  border: 2px solid var(--color-red);
+
+
+}
+
+/*  create Quiz > add Question > create-question-remove-button */
+
+.create-question-remove-button{
+  padding: 0.500rem 1.5rem;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+
+/* Generalizing button for all end pages */
+
+.standard-button{
+  
+  padding: 0.950rem 1.5rem;
+  color: #082f49;
+  font-size: 13px;
+  border: 2px solid #082f49;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+
+}
+
+.standard-button:hover:not(:disabled){
+  
+  background-color: #082f49;
+  color: white;
+  transform: translateY(-2.5px);
 }

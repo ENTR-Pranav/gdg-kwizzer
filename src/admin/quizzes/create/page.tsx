@@ -144,6 +144,7 @@ export default function CreateQuizPage() {
                     size="sm"
                     variant="ghost"
                     onClick={() => removeQuestion(qIndex)}
+                    className="create-question-remove-button"
                   >
                     Remove
                   </Button>

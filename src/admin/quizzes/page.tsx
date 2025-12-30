@@ -62,10 +62,10 @@ export default function QuizzesPage() {
           </div>
           <div className="quizzes-button-group">
             <Link to="/">
-              <Button size="sm">← Back</Button>
+              <Button size="sm" className="quizzes-back-button">← Back</Button>
             </Link>
             <Link to="/admin/quizzes/create">
-              <Button size="sm">+ Create Quiz</Button>
+              <Button size="sm" className="quizzes-create-quiz-button">+ Create Quiz</Button>
             </Link>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function QuizzesPage() {
                 Create your first quiz to get started with hosting games.
               </p>
               <Link to="/admin/quizzes/create">
-                <Button>Create Your First Quiz</Button>
+                <Button className="standard-button">Create Your First Quiz</Button>
               </Link>
             </div>
           </Card>
@@ -103,10 +103,10 @@ export default function QuizzesPage() {
                   </div>
                   <div className="quiz-card-actions">
                     <Link to={`/admin/quizzes/${quiz.id}`}>
-                      <Button size="sm">Edit</Button>
+                      <Button size="sm" className="quiz-card-edit-button">Edit</Button>
                     </Link>
                     <Link to={`/admin/host?quiz=${quiz.id}`}>
-                      <Button size="sm">Host</Button>
+                      <Button size="sm" className="quiz-card-host-button">Host</Button>
                     </Link>
                     <Button
                       size="sm"
