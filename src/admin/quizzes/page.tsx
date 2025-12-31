@@ -75,7 +75,7 @@ export default function QuizzesPage() {
                                 Create your first quiz to get started with hosting games.
                             </p>
                             <Link to="/admin/quizzes/create">
-                                <Button>Create Your First Quiz</Button>
+                                <Button className={"create-card-btn"}>Create Your First Quiz</Button>
                             </Link>
                         </div>
                     </Card>
@@ -118,7 +118,7 @@ export default function QuizzesPage() {
                         ))}
                         <div className={"create-card-btn-container"}>
                             <Link to="/admin/quizzes/create">
-                                <Button size="sm" className={"create-card-btn"}>+ Create Quiz</Button>
+                                <Button size="sm" className={"create-card-btn down-the-button"}>+ Create Quiz</Button>
                             </Link>
                         </div>
                     </div>
