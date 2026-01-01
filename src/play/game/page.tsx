@@ -63,7 +63,19 @@ export default function GamePage() {
     async function submitAnswer() {
         if (selectedAnswer === null || !game || !user || answerSubmitted || !quiz)
             return;
+        const currentQuestion = quiz.questions[game.currentQuestionIndex];
+        const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
+        // Points Calculation Logic
+        let pointsEarned = 0;
+        if (isCorrect) {
+            // Use the specific question limit or fall back to global game settings
+            const totalTimeAllowed = currentQuestion.timeLimit || game.settings.questionTimeLimit;
+
+            // Formula: (timeLeft / totalTime) * 100
+            // If they answer instantly, they get ~100. If time is almost up, they get ~5.
+            pointsEarned = Math.max(0, Math.round((timeLeft / totalTimeAllowed) * 100));
+        }
         try {
             await firestoreService.submitAnswer(game.id, game.currentQuestionIndex, {
                 playerId: user.uid,
@@ -75,6 +87,9 @@ export default function GamePage() {
                     quiz.questions[game.currentQuestionIndex].correctAnswer,
             });
             setAnswerSubmitted(true);
+            if (isCorrect && pointsEarned > 0) {
+                await firestoreService.updatePlayerScore(game.id, user.uid, pointsEarned);
+            }
         } catch (error) {
             console.error("Error submitting answer:", error);
         }
