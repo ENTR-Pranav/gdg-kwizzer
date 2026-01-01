@@ -57,7 +57,7 @@
 }
 
 .join-back-home-link {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     text-decoration: none;
     transition: color var(--transition-normal);

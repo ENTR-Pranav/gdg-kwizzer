@@ -196,6 +196,7 @@ function HostPageContent() {
 import {QuestionText} from "../../components/game/QuestionText";
 import {OptionButton} from "../../components/game/OptionButton";
 import {Leaderboard} from "../../components/game/Leaderboard";
+import {Podium} from "../../components/game/Leaderboard";
 import {useLeaderboard} from "../../hooks/useGame";
 
 function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
@@ -448,8 +449,13 @@ function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
                         <h1 className="host-ended-title">Game Ended!</h1>
                         <p className="host-ended-subtitle">Thanks for hosting!</p>
                     </div>
+                    <h1 className="host-ended-title">Final Standings</h1>
+
+                    {/* 1. The Visual Podium */}
+                    <Podium entries={leaderboard}/>
 
                     {/* Show final leaderboard with gold/silver/bronze */}
+
                     <div className="host-ended-leaderboard">
                         <Leaderboard
                             entries={leaderboard}
@@ -500,26 +506,28 @@ function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
                                 </div>
                             </div>
                         ) : (
-                            <div className="host-players-grid">
-                                {players.map((player, index) => (
-                                    <div
-                                        key={player.id}
-                                        className={`host-player-item ${
-                                            newPlayerId === player.id ? "host-player-new" : ""
-                                        }`}
-                                    >
-                                        <div className="host-player-number">{index + 1}</div>
+                            <div className={"scrollable-player"}>
+                                <div className="host-players-grid">
+                                    {players.map((player, index) => (
+                                        <div
+                                            key={player.id}
+                                            className={`host-player-item ${
+                                                newPlayerId === player.id ? "host-player-new" : ""
+                                            }`}
+                                        >
+                                            <div className="host-player-number">{index + 1}</div>
 
-                                        <div className="host-player-info">
-                                            <div className="host-player-name">{player.name}</div>
-                                            {newPlayerId === player.id && (
-                                                <div className="host-player-joined">Joined!</div>
-                                            )}
+                                            <div className="host-player-info">
+                                                <div className="host-player-name">{player.name}</div>
+                                                {newPlayerId === player.id && (
+                                                    <div className="host-player-joined">Joined!</div>
+                                                )}
+                                            </div>
+
+                                            <div className="host-player-indicator"></div>
                                         </div>
-
-                                        <div className="host-player-indicator"></div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
                         )}
                     </div>

@@ -71,7 +71,6 @@ export function useGameAnswers(gameId: string, questionIndex: number) {
 
 export function useLeaderboard(gameId: string) {
     const [leaderboard, setLeaderboard] = useState<LeaderboardEntry[]>([])
-
     useEffect(() => {
         if (!gameId) return
 

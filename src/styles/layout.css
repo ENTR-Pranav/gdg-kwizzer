@@ -90,6 +90,18 @@ html, body {
     border-bottom: 2px solid white;
 }
 
+.scrollable-player {
+    max-height: 300px;
+    overflow-y: auto;
+    backdrop-filter: blur(70px);
+    border-radius: 0.75rem;
+    background: radial-gradient(
+            ellipse 100% 70% at 100% 0%,
+            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
+    ) !important;
+    padding: 0.5rem 0.5rem 0.75rem 0.75rem;
+}
+
 .glass-container {
     padding: 1rem 1rem;
     margin-bottom: 1rem;
