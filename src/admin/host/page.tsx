@@ -427,15 +427,14 @@ function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
                             </div>
                         </div>
                     </div>
-
-                    {/* Sidebar - Leaderboard */}
-                    <div className="host-sidebar-leaderboard">
-                        <Leaderboard
-                            entries={leaderboard}
-                            maxEntries={100}
-                            showLiveIndicator={true}
-                        />
-                    </div>
+                </div>
+                {/* Sidebar - Leaderboard */}
+                <div className="host-sidebar-leaderboard">
+                    <Leaderboard
+                        entries={leaderboard}
+                        maxEntries={100}
+                        showLiveIndicator={true}
+                    />
                 </div>
             </div>
         );
