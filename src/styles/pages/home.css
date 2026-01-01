@@ -62,6 +62,8 @@
             var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
     ) !important;
     padding: 2rem;
+    border-bottom: 2px solid ghostwhite;
+    border-top: 2px solid ghostwhite;
 }
 
 .home-user-info {

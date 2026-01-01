@@ -84,7 +84,12 @@
     flex: 1;
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
-    background-color: #ebf6ff;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.create-input-field::placeholder {
+    color: black;
 }
 
 .create-question-input {

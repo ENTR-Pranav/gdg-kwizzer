@@ -75,6 +75,21 @@ html, body {
             var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
     ) !important;
     color: var(--foreground);
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
+}
+
+.glass-container-host-end {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.75rem;
+    background: radial-gradient(
+            ellipse 100% 70% at 100% 0%,
+            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
+    ) !important;
+    color: var(--foreground);
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
 }
 
 .glass-container-gamepage {

@@ -205,18 +205,23 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    background-color: rgba(81, 110, 127, 1);
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius-md);
+    border: 2px solid ghostwhite;
+
 }
 
 .host-question-title {
     color: white;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.5rem;
 
 }
 
 .host-question-count {
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.125rem;
     margin-left: 0.5rem;
 }
@@ -234,12 +239,12 @@
     border-radius: var(--radius-lg);
     border: 2px solid ghostwhite;
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(81, 110, 127, 1);
 }
 
 .host-timer-urgent {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-color: black;
+    background-color: rgba(81, 110, 127, 1);
+    border-color: none;
     animation: pulse 0.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -277,6 +282,8 @@
             ellipse 100% 70% at 100% 0%,
             var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
     ) !important;
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
 }
 
 @media (min-width: 1024px) {
@@ -573,7 +580,7 @@
 .host-lobby-controls {
     margin-top: 2rem;
     display: flex;
-    gap: 1rem;
     border-top: 1px solid ghostwhite;
     padding-top: 1.5rem;
+    flex-direction: column;
 }

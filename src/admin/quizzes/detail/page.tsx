@@ -287,6 +287,9 @@ export default function QuizDetailPage() {
                     </Card>
                 </div>
             </div>
+            <Link to="/admin/quizzes">
+                <Button className={"save-changes-btn"}>Save Changes</Button>
+            </Link>
         </div>
     );
 }

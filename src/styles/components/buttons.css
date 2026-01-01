@@ -582,16 +582,73 @@
 .create-card-btn {
     width: 100%;
     padding: 0.875rem 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 0.75rem;
-    background-color: #4875a8;
-    color: #e9fdff;
+    background-color: rgba(170, 208, 251, 0.79);
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
+    border: none;
+}
+
+.save-changes-btn {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-weight: 400;
+    border-radius: 0.75rem;
+    background-color: rgba(81, 110, 127, 1);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    border: none;
+}
+
+.save-changes-btn:hover {
+    transform: scale(1.01) translateY(-2px);
+}
+
+.back-quizzes-btn {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-weight: 400;
+    border-radius: 0.75rem;
+    background-color: rgba(81, 110, 127, 1);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    border: 1px solid ghostwhite;
+}
+
+.back-quizzes-btn:hover {
+    transform: scale(1.01) translateY(-2px);
 }
 
 .create-card-btn:hover {
+    transform: translateY(-2px) scale(1.01);
+    background-color: var(--color-blue-hover);
+    border-color: var(--color-blue-hover);
+    box-shadow: var(--shadow-lg);
+}
+
+.create-card-btn-new {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-weight: 400;
+    border-radius: 0.75rem;
+    background-color: rgba(81, 110, 127, 1);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    transition: 0.4s ease;
+    border: none;
+}
+
+.create-card-btn-new:hover {
     transform: translateY(-2px) scale(1.01);
     background-color: var(--color-blue-hover);
     border-color: var(--color-blue-hover);
@@ -611,6 +668,7 @@
     font-weight: 500;
     font-size: 1rem;
     transition: 0.4s ease;
+    color: white;
 }
 
 .back-btn:hover {

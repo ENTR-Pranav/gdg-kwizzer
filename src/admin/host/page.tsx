@@ -449,26 +449,28 @@ function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
                         <h1 className="host-ended-title">Game Ended!</h1>
                         <p className="host-ended-subtitle">Thanks for hosting!</p>
                     </div>
-                    <h1 className="host-ended-title">Final Standings</h1>
+                    <div className={"glass-container-host-end"}>
+                        <h1 className="host-ended-title">Final Standings</h1>
 
-                    {/* 1. The Visual Podium */}
-                    <Podium entries={leaderboard}/>
+                        {/* 1. The Visual Podium */}
+                        <Podium entries={leaderboard}/>
 
-                    {/* Show final leaderboard with gold/silver/bronze */}
+                        {/* Show final leaderboard with gold/silver/bronze */}
 
-                    <div className="host-ended-leaderboard">
-                        <Leaderboard
-                            entries={leaderboard}
-                            maxEntries={100}
-                            showLiveIndicator={false}
-                        />
+                        <div className="host-ended-leaderboard">
+                            <Leaderboard
+                                entries={leaderboard}
+                                maxEntries={100}
+                                showLiveIndicator={false}
+                            />
+                        </div>
+
+                        <Link to="/admin/quizzes">
+                            <Button variant="outline" className="host-back-button">
+                                Back to Quizzes
+                            </Button>
+                        </Link>
                     </div>
-
-                    <Link to="/admin/quizzes">
-                        <Button variant="outline" className="host-back-button">
-                            Back to Quizzes
-                        </Button>
-                    </Link>
                 </div>
             </div>
         );
@@ -541,6 +543,9 @@ function GameHost({game, quiz}: { game: Game; quiz: Quiz }) {
                         >
                             {startingGame ? "Starting Game..." : "Start Game"}
                         </Button>
+                        <Link to="/admin/quizzes">
+                            <Button className={"back-quizzes-btn"}>Back To Your Quizzes</Button>
+                        </Link>
                     </div>
                 </Card>
             </div>

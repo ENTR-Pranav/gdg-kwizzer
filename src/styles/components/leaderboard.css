@@ -36,7 +36,7 @@
 .live-dot {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: black;
+    background-color: #54fc00;
     border-radius: 50%;
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -115,7 +115,7 @@
 }
 
 .leaderboard-player-name {
-    font-weight: 700;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -135,8 +135,8 @@
 
 .leaderboard-score {
     font-family: monospace;
-    font-weight: 700;
-    color: rgba(28, 28, 28, 0.8);
+    font-weight: 500;
+    color: white;
     font-size: 1.125rem;
 }
 
