@@ -27,10 +27,12 @@
     flex-direction: column;
     gap: 1rem;
     backdrop-filter: blur(170px);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.11);
     padding: 1rem;
     border-radius: 0.75rem;
     color: var(--foreground);
+    border-top: 2px solid ghostwhite;
+    border-bottom: 2px solid ghostwhite;
 }
 
 .auth-divider {
@@ -50,7 +52,7 @@
 }
 
 .divider-text {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
 }
 

@@ -112,7 +112,7 @@
     margin-top: 1rem;
     width: 100%;
     padding: 0.875rem 1.5rem;
-    background-color: var(--color-blue);
+    background-color: #f63b3b;
     color: white;
     font-weight: 700;
     border-radius: var(--radius-lg);
@@ -121,7 +121,7 @@
 }
 
 .btn-signin:hover:not(:disabled) {
-    background-color: var(--color-blue-hover);
+    background-color: #eb2525;
     box-shadow: var(--shadow-lg);
     transform: translateY(-2px);
 }
@@ -131,7 +131,7 @@
 }
 
 .btn-signin:disabled {
-    background-color: var(--color-blue-light);
+    background-color: #fd9393;
 }
 
 .btn-signup {
@@ -216,13 +216,13 @@
 }
 
 .home-button-outline {
-    background-color: #2f4e85;
+    background-color: #852f2f;
     color: #ecfaff;
     box-shadow: var(--shadow-md);
 }
 
 .home-button-outline:hover {
-    background-color: #0ab0e3;
+    background-color: #e33d0a;
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
@@ -233,13 +233,13 @@
 }
 
 .home-button-filled {
-    background-color: #0ab0e3;
+    background-color: #e33d0a;
     color: white;
     box-shadow: var(--shadow-md);
 }
 
 .home-button-filled:hover {
-    background-color: #0ab0e3;
+    background-color: #e33d0a;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -249,7 +249,7 @@
 }
 
 .home-signout-button {
-    background-color: rgb(68, 105, 112);
+    background-color: rgb(112, 85, 68);
     color: #eae8e8;
 }
 
@@ -284,7 +284,7 @@
 .join-find-button {
     width: 100%;
     padding: 1rem 1.5rem;
-    background-color: var(--color-blue);
+    background-color: #f63b3b;
     color: white;
     font-size: 1.125rem;
     font-weight: 700;
@@ -296,7 +296,7 @@
 }
 
 .join-find-button:hover:not(:disabled) {
-    background-color: var(--color-blue-hover);
+    background-color: #eb2525;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -306,14 +306,14 @@
 }
 
 .join-find-button:disabled {
-    background-color: var(--color-blue-light);
+    background-color: #fd9393;
     cursor: not-allowed;
 }
 
 .join-back-button {
     flex: 1;
     padding: 0.875rem 1rem;
-    border: 2px solid black;
+    border: none;
     color: black;
     border-radius: var(--radius-lg);
     background-color: #56b3ff;
@@ -388,7 +388,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.875rem 1.75rem;
-    background-color: rgba(63, 191, 237, 0.68);
+    background-color: rgba(237, 109, 63, 0.68);
     color: whitesmoke;
     border: 2px solid black;
     font-weight: 700;
@@ -420,17 +420,20 @@
     font-size: 1.125rem;
     font-weight: 700;
     border-radius: var(--radius-lg);
-    background-color: #4875a8;
+    background-color: rgba(127, 81, 81, 1);
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     color: white;
-    border: none;
     cursor: pointer;
     transition: all var(--transition-normal);
     box-shadow: var(--shadow-md);
 }
 
 .host-create-button:hover:not(:disabled) {
-    background-color: var(--color-blue-hover);
-    border-color: var(--color-blue-hover);
+    background-color: var(--glow-red);
+    border-color: var(--glow-red);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -451,10 +454,11 @@
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
     font-weight: 700;
-    background-color: #4875a8;
+    background-color: #a84848;
     color: white;
     border: 1px solid white;
     border-radius: var(--radius-lg);
+    cursor: pointer;
 
 }
 
@@ -471,9 +475,10 @@
     margin-top: 10%;
     padding: 0.875rem 1rem;
     color: white;
-    background-color: #516E7F;
+    background-color: rgb(127, 81, 81);
     backdrop-filter: blur(4px);
     border-radius: var(--radius-lg);
+    border: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 1.15rem !important;
     width: 100%;
@@ -481,14 +486,14 @@
 }
 
 .host-back-button:hover {
-    background-color: var(--color-blue-hover);
+    background-color: #eb2525;
     transform: translateY(-2px);
 }
 
 /* Delete Buttons */
 .quiz-card-delete-button,
 .quiz-detail-delete-button {
-    background-color: rgba(10, 176, 227, 0.23);
+    background-color: rgba(227, 61, 10, 0.38);
     border: 1px solid #e5f8ff;
     transition: all var(--transition-normal);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -533,6 +538,10 @@
     transition: all var(--transition-normal);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 1.25rem;
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 .create-cancel-button-inner:hover {
@@ -549,7 +558,7 @@
 
 .card-btn {
     border: 1px solid #e5f8ff;
-    background-color: rgba(10, 176, 227, 0.23);
+    background-color: rgba(227, 140, 10, 0.23);
     padding: 0.75rem 1rem;
     border-radius: var(--radius-lg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -559,13 +568,13 @@
 }
 
 .card-btn:hover {
-    background-color: var(--color-green);
+    background-color: #FF6800FF;
     transform: scale(1.01) translateY(-1px);
 }
 
 .detail-btn {
     border: 1px solid #e5f8ff;
-    background-color: rgba(10, 176, 227, 0.23);
+    background-color: rgba(227, 61, 10, 0.23);
     padding: 0.5rem 0.5rem;
     border-radius: var(--radius-lg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -584,12 +593,15 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(170, 208, 251, 0.79);
-    color: white;
+    background-color: white;
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: black;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
-    border: none;
 }
 
 .save-changes-btn {
@@ -597,13 +609,16 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(81, 110, 127, 1);
+    background-color: rgba(127, 81, 81, 1);
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
     margin-top: 10%;
-    border: none;
 }
 
 .save-changes-btn:hover {
@@ -615,7 +630,7 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(81, 110, 127, 1);
+    background-color: rgba(127, 81, 81, 1);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
@@ -630,9 +645,10 @@
 
 .create-card-btn:hover {
     transform: translateY(-2px) scale(1.01);
-    background-color: var(--color-blue-hover);
-    border-color: var(--color-blue-hover);
+    background-color: var(--glow-red);
+    border-color: var(--glow-red);
     box-shadow: var(--shadow-lg);
+    color: white;
 }
 
 .create-card-btn-new {
@@ -640,18 +656,21 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(81, 110, 127, 1);
+    background-color: rgba(127, 81, 81, 1);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
-    border: none;
+    border-top: 2px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 .create-card-btn-new:hover {
     transform: translateY(-2px) scale(1.01);
-    background-color: var(--color-blue-hover);
-    border-color: var(--color-blue-hover);
+    background-color: var(--glow-red);
+    border-color: var(--glow-red);
     box-shadow: var(--shadow-lg);
 }
 
@@ -662,7 +681,7 @@
 .back-btn {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background-color: #56b3ff;
+    background-color: rgba(255, 86, 86, 0.66);
     border: 1px solid #e5f8ff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;

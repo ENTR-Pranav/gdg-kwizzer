@@ -76,10 +76,7 @@
 /* Empty State */
 .quizzes-empty-content {
     padding: 2rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     border-radius: 0.75rem;
     border-top: 2px solid ghostwhite;
     border-bottom: 2px solid ghostwhite;
@@ -105,10 +102,7 @@
     display: grid;
     gap: 1.5rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     padding: 1rem;
     border-top: 2px solid ghostwhite;
     border-bottom: 2px solid ghostwhite;
@@ -254,12 +248,12 @@
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(191, 125, 127);
     border-radius: var(--radius-md);
 }
 
 .create-option-item:hover {
-    border-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 .create-option-selected {
@@ -455,10 +449,7 @@
     border-left: 2px solid white;
     backdrop-filter: blur(70px);
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     padding: 1rem 1rem 1rem 1.5rem;
 }
 
@@ -500,7 +491,7 @@
     height: 1.5rem;
     border-radius: 0.375rem;
     background-color: white;
-    border: 2px solid #7bcbe4;
+    border: 2px solid #e4947b;
     display: flex;
     align-items: center;
     justify-content: center;

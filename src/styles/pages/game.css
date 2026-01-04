@@ -26,10 +26,7 @@
     border-bottom: 2px solid white;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important
 }
 
 .lobby-title {
@@ -101,10 +98,7 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     border: 2px solid white;
 }
 
@@ -118,7 +112,7 @@
     font-weight: 500;
     color: white;
     margin-bottom: 1rem;
-    background-color: #4875a8;
+    background-color: #a84848;
     padding: 0.875rem 1rem;
     border-radius: 0.75rem;
     border: 1px solid white;
@@ -129,7 +123,7 @@
     font-weight: 700;
     color: white;
     margin-bottom: 5rem;
-    background-color: #4875a8;
+    background-color: #a84848;
     padding: 0.875rem 0.75rem;
     border-radius: 0.75rem;
     border: 1px solid white;
@@ -144,10 +138,7 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
@@ -181,10 +172,6 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
     border-top: 2px solid white;
 }
 
@@ -328,10 +315,7 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     color: var(--foreground);
     border-top: 2px solid white;
     border-bottom: 2px solid white;

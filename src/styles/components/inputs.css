@@ -38,7 +38,10 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    border: 2px solid black;
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     border-radius: var(--radius-lg);
     background-color: floralwhite;
     color: black;
@@ -51,7 +54,7 @@
 
 .join-pin-input:focus {
     outline: none;
-    border-color: var(--color-blue);
+    border: 3px solid rgb(248, 90, 95);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
@@ -61,7 +64,7 @@
     text-align: center;
     font-size: 1.125rem;
     font-weight: 500;
-    border: 2px solid black;
+    border: 3px solid rgb(248, 90, 95);
     border-radius: var(--radius-lg);
     background-color: floralwhite;
     color: black;
@@ -85,11 +88,14 @@
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     background-color: white;
-    border: 1px solid black;
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 .create-input-field::placeholder {
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .create-question-input {
@@ -97,11 +103,18 @@
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     background-color: #ebf6ff;
+    border-top: 2px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 .create-option-input {
     background-color: #ebf6ff;
-    border-color: rgba(0, 0, 0, 0.2);
+    border-top: 3px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     color: black;
     flex: 1;
     padding: 0.75rem 1rem;
@@ -117,6 +130,10 @@
     text-align: center;
     padding: 0.75rem 1rem;
     background-color: #ebf6ff;
+    border-top: 2px solid rgb(191, 125, 127);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     border-radius: 0.75rem;
 }
 

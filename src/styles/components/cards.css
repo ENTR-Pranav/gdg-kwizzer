@@ -58,9 +58,6 @@
     overflow-y: auto;
     backdrop-filter: blur(70px);
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
     padding: 0.5rem 0.5rem 0.75rem 0.75rem;
 }
