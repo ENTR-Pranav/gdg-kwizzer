@@ -478,6 +478,7 @@
     font-size: 1.15rem !important;
     width: 100%;
     transition: all var(--transition-normal);
+    border: none;
 }
 
 .host-back-button:hover {
