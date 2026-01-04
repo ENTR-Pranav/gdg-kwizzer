@@ -26,13 +26,8 @@ html, body {
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    background-attachment: fixed;
 
-    /* RADIAL GRADIENT: Light starts at Top-Right (100% 0%) */
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--deep-navy) 100% /* Soft finish at the bottom-left */
-    ) !important;
+    background: linear-gradient(180deg, var(--glow-red) 10%, var(--glow-black) 100%) fixed;
 
     color: var(--foreground);
 }
