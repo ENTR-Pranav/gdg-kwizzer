@@ -1,0 +1,74 @@
+/* ===== Root Container ===== */
+.question-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    
+    padding: 20px;
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== Header ===== */
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* ===== Question Number Badge ===== */
+.question-badge {
+    background: #ffffff;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    border: 1px solid #e2e6ea;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Timer ===== */
+.question-timer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid #e2e6ea;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.timer-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2b6cb0;
+    border-radius: 50%;
+}
+
+.timer-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2b6cb0;
+}
+
+/* ===== Question Card ===== */
+.question-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border: 1px solid #e2e6ea;
+}
+
+/* ===== Question Text ===== */
+.question-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #2d3748;
+    line-height: 1.55;
+}
