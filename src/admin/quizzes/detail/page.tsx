@@ -216,9 +216,8 @@ export default function QuizDetailPage() {
                       return (
                         <div key={oIndex} className="quiz-detail-option-item">
                           <div
-                            className={`quiz-detail-option-checkbox ${
-                              isCorrect ? "quiz-detail-option-correct" : ""
-                            }`}
+                            className={`quiz-detail-option-checkbox ${isCorrect ? "quiz-detail-option-correct" : ""
+                              }`}
                             onClick={() =>
                               handleUpdateQuestion(qIndex, {
                                 correctAnswer: oIndex,
@@ -272,7 +271,7 @@ export default function QuizDetailPage() {
                           handleUpdateQuestion(qIndex, { timeLimit: limit });
                         }
                       }}
-                      className="quiz-detail-time-input"
+                      className="input"
                     />
                     <span>seconds</span>
                   </div>

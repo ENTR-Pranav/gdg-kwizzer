@@ -13,6 +13,7 @@ import QuizDetailPage from './admin/quizzes/detail/page'
 function App() {
   const { user, loading } = useAuth()
 
+
   if (loading) {
     return (
       <div className="app-loading-container">

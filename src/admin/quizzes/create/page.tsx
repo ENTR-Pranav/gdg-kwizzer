@@ -115,7 +115,7 @@ export default function CreateQuizPage() {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Quiz Title"
-              className="create-input-field"
+              className="input"
               required
             />
             <Input
@@ -123,7 +123,7 @@ export default function CreateQuizPage() {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Description (optional)"
-              className="create-input-field"
+              className="input"
             />
           </div>
 
@@ -157,7 +157,7 @@ export default function CreateQuizPage() {
                     updateQuestion(qIndex, "text", e.target.value)
                   }
                   placeholder="Enter question..."
-                  className="create-question-input"
+                  className="input"
                   required
                 />
 
@@ -168,11 +168,10 @@ export default function CreateQuizPage() {
                       onClick={() =>
                         updateQuestion(qIndex, "correctAnswer", oIndex)
                       }
-                      className={`create-option-item ${
-                        question.correctAnswer === oIndex
-                          ? "create-option-selected"
-                          : ""
-                      }`}
+                      className={`create-option-item ${question.correctAnswer === oIndex
+                        ? "create-option-selected"
+                        : ""
+                        }`}
                     >
                       <div
                         className={`create-option-label ${OPTION_COLORS[oIndex]}`}
@@ -188,7 +187,7 @@ export default function CreateQuizPage() {
                           updateOption(qIndex, oIndex, e.target.value)
                         }
                         placeholder={`Option ${OPTION_LABELS[oIndex]}`}
-                        className="create-option-input"
+                        className="input"
                         required
                       />
                       {question.correctAnswer === oIndex && (
