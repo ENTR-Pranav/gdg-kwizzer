@@ -6,7 +6,7 @@
 .input {
     width: 100%;
     padding: 0.75rem 1rem;
-    background-color: #ffffff;
+    background-color: rgba(217, 217, 217, 1);
     border: 2px solid var(--border);
     border-radius: var(--radius-lg);
     color: black;
@@ -87,11 +87,9 @@
     flex: 1;
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
-    background-color: white;
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .create-input-field::placeholder {
@@ -101,20 +99,18 @@
 .create-question-input {
     font-size: 1rem;
     padding: 0.75rem 1rem;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
     border-radius: 0.75rem;
-    background-color: #ebf6ff;
-    border-top: 2px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+}
+
+.create-question-input::placeholder {
+    color: rgba(0, 0, 0, 1);
 }
 
 .create-option-input {
-    background-color: #ebf6ff;
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    background-color: rgba(217, 217, 217, 1);
+    border: none;
     color: black;
     flex: 1;
     padding: 0.75rem 1rem;
@@ -122,7 +118,7 @@
 }
 
 .create-option-input::placeholder {
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .create-time-input {
@@ -130,10 +126,7 @@
     text-align: center;
     padding: 0.75rem 1rem;
     background-color: #ebf6ff;
-    border-top: 2px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-radius: 0.75rem;
 }
 

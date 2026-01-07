@@ -112,7 +112,7 @@
     margin-top: 1rem;
     width: 100%;
     padding: 0.875rem 1.5rem;
-    background-color: #f63b3b;
+    background-color: rgba(53, 106, 160, 1);
     color: white;
     font-weight: 700;
     border-radius: var(--radius-lg);
@@ -121,7 +121,7 @@
 }
 
 .btn-signin:hover:not(:disabled) {
-    background-color: #eb2525;
+    background-color: rgba(53, 106, 160, 0.9);
     box-shadow: var(--shadow-lg);
     transform: translateY(-2px);
 }
@@ -131,7 +131,7 @@
 }
 
 .btn-signin:disabled {
-    background-color: #fd9393;
+    background-color: rgba(53, 106, 160, 0.5);
 }
 
 .btn-signup {
@@ -163,16 +163,16 @@
     width: 100%;
     max-width: 320px;
     padding: 0.875rem 1.5rem;
-    color: black;
+    color: white;
     font-weight: 500;
     border-radius: var(--radius-lg);
-    background-color: white;
+    background-color: rgba(53, 106, 160, 1);
     box-shadow: var(--shadow-sm);
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 .btn-google:hover:not(:disabled) {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(53, 106, 160, 0.8);
     box-shadow: var(--shadow-md);
     border: 2px solid #ffffff;
     transform: translateY(-1px);
@@ -216,13 +216,13 @@
 }
 
 .home-button-outline {
-    background-color: #852f2f;
+    background-color: rgba(53, 106, 160, 1);
     color: #ecfaff;
     box-shadow: var(--shadow-md);
 }
 
 .home-button-outline:hover {
-    background-color: #e33d0a;
+    background-color: rgba(53, 106, 160, 0.7);
     color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
@@ -233,13 +233,13 @@
 }
 
 .home-button-filled {
-    background-color: #e33d0a;
+    background-color: rgb(73, 139, 213);
     color: white;
     box-shadow: var(--shadow-md);
 }
 
 .home-button-filled:hover {
-    background-color: #e33d0a;
+    background-color: rgba(73, 139, 213, 0.7);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -249,7 +249,7 @@
 }
 
 .home-signout-button {
-    background-color: rgb(112, 85, 68);
+    background-color: rgb(40, 137, 244);
     color: #eae8e8;
 }
 
@@ -520,10 +520,11 @@
 .create-add-button {
     background: none;
     border: none;
-    color: white;
+    color: rgba(53, 106, 160, 1);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 450;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .create-cancel-button {
@@ -538,10 +539,7 @@
     transition: all var(--transition-normal);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 1.25rem;
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    border: none;
 }
 
 .create-cancel-button-inner:hover {
@@ -558,7 +556,7 @@
 
 .card-btn {
     border: 1px solid #e5f8ff;
-    background-color: rgba(227, 140, 10, 0.23);
+    background-color: rgba(67, 132, 253, 0.25);
     padding: 0.75rem 1rem;
     border-radius: var(--radius-lg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -568,7 +566,7 @@
 }
 
 .card-btn:hover {
-    background-color: #FF6800FF;
+    background-color: rgba(81, 163, 246, 0.5);
     transform: scale(1.01) translateY(-1px);
 }
 
@@ -593,12 +591,9 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: white;
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    color: black;
+    background-color: rgba(53, 106, 160, 1);
+    border: none;
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
@@ -609,11 +604,8 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(127, 81, 81, 1);
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    background-color: rgba(53, 106, 160, 1);
+    border: none;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
@@ -645,8 +637,7 @@
 
 .create-card-btn:hover {
     transform: translateY(-2px) scale(1.01);
-    background-color: var(--glow-red);
-    border-color: var(--glow-red);
+    background-color: rgba(53, 106, 160, 0.5);
     box-shadow: var(--shadow-lg);
     color: white;
 }
@@ -656,21 +647,17 @@
     padding: 0.875rem 1.5rem;
     font-weight: 400;
     border-radius: 0.75rem;
-    background-color: rgba(127, 81, 81, 1);
+    background-color: rgba(53, 106, 160, 1);
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20px;
     transition: 0.4s ease;
-    border-top: 2px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    border: none;
 }
 
 .create-card-btn-new:hover {
     transform: translateY(-2px) scale(1.01);
-    background-color: var(--glow-red);
-    border-color: var(--glow-red);
+    background-color: rgba(53, 106, 160, 0.7);
     box-shadow: var(--shadow-lg);
 }
 
@@ -681,7 +668,7 @@
 .back-btn {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    background-color: rgba(255, 86, 86, 0.66);
+    background-color: rgba(53, 106, 160, 0.5);
     border: 1px solid #e5f8ff;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;

@@ -261,7 +261,7 @@ export default function QuizDetailPage() {
                                     </div>
 
                                     <div className="quiz-detail-time-control">
-                                        <span>Time Limit:</span>
+                                        <span className={"text-color"}>Time Limit:</span>
                                         <input
                                             type="number"
                                             min="5"

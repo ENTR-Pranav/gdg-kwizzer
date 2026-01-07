@@ -12,7 +12,7 @@
 
 .quizzes-loading-text {
     margin-top: 1rem;
-    color: white;
+    color: rgba(53, 106, 160, 1);;
 }
 
 /* Main Container */
@@ -20,6 +20,8 @@
     min-height: 100vh;
     padding: 1rem;
     width: 100%;
+    border-radius: 16px;
+    border: 2px solid black;
 }
 
 @media (min-width: 640px) {
@@ -60,11 +62,11 @@
 .quizzes-title {
     font-size: 1.875rem;
     font-weight: 700;
-    color: white;
+    color: rgba(30, 41, 59, 1);
 }
 
 .quizzes-subtitle {
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-top: 0.25rem;
 }
 
@@ -85,12 +87,12 @@
 .quizzes-empty-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-bottom: 1rem;
 }
 
 .quizzes-empty-text {
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-bottom: 2rem;
     max-width: 28rem;
     margin-left: auto;
@@ -101,11 +103,10 @@
 .quizzes-grid {
     display: grid;
     gap: 1.5rem;
-    border-radius: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1) !important;
     padding: 1rem;
-    border-top: 2px solid ghostwhite;
-    border-bottom: 2px solid ghostwhite;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .quiz-card-content {
@@ -124,10 +125,11 @@
 }
 
 .quiz-card-info {
-    background-color: rgba(217, 217, 217, 1);
+    background-color: rgb(210, 228, 255);
     width: 100%;
     padding: 0.75rem;
     border-radius: 0.75rem;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
 }
 
 .quiz-card-title {
@@ -164,6 +166,8 @@
     min-height: 100vh;
     padding: 1rem;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 16px;
 }
 
 @media (min-width: 640px) {
@@ -185,12 +189,13 @@
 }
 
 .create-quiz-title {
-    font-size: 1.875rem;
     font-weight: 600;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     margin-bottom: 1.5rem;
     border-radius: 0.75rem;
+    text-align: center;
+    font-size: 40px;
 }
 
 .create-quiz-form {
@@ -221,7 +226,7 @@
 
 .create-question-label {
     font-weight: 400;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     font-size: 1.1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -248,7 +253,7 @@
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
-    border: 2px solid rgb(191, 125, 127);
+    border: 2px solid rgba(53, 106, 160, 1);
     border-radius: var(--radius-md);
 }
 
@@ -280,8 +285,7 @@
 
 .create-correct-badge {
     font-size: 0.75rem;
-    background-color: black;
-    color: white;
+    background-color: rgba(53, 106, 160, 1);
     padding: 0.5rem 0.5rem;
     border-radius: 0.375rem;
     font-weight: 700;
@@ -296,12 +300,12 @@
     padding: 0.75rem;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-md);
-    border: 1px solid white;
+    border: 1px solid rgba(53, 106, 160, 1);
     margin-bottom: 1rem;
 }
 
 .create-time-label {
-    color: white;
+    color: rgba(30, 41, 59, 1);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -330,7 +334,7 @@
 
 .quiz-detail-loading-text {
     margin-left: 1rem;
-    color: white;
+    color: rgba(53, 106, 160, 1);;
 }
 
 .quiz-detail-error-title {
@@ -350,6 +354,8 @@
     min-height: 100vh;
     padding: 1rem;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 16px;
 }
 
 @media (min-width: 640px) {
@@ -402,11 +408,11 @@
 .quiz-detail-title {
     font-size: 1.875rem;
     font-weight: 900;
-    color: white;
+    color: rgba(30, 41, 59, 1);
 }
 
 .quiz-detail-description {
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-top: 0.5rem;
 }
 
@@ -432,7 +438,7 @@
 .quiz-detail-questions-title {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-bottom: 1rem;
 }
 
@@ -443,14 +449,16 @@
     overflow-y: auto;
     max-height: 30rem;
     border-radius: 0.75rem;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
+    background-color: white;
 }
 
 .quiz-detail-question-item {
     border-left: 2px solid white;
-    backdrop-filter: blur(70px);
-    border-radius: 0.75rem;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1) !important;
     padding: 1rem 1rem 1rem 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 }
 
 .quiz-detail-question-content {
@@ -459,18 +467,18 @@
 
 .quiz-detail-question-number {
     font-weight: 600;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     margin-bottom: 0.5rem;
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    opacity: 0.5;
+    opacity: 0.875;
 }
 
 .quiz-detail-question-text {
     font-size: 1.125rem;
     font-weight: 700;
-    color: white;
+    color: rgba(30, 41, 59, 1);
 }
 
 .quiz-detail-options-list {
@@ -491,7 +499,7 @@
     height: 1.5rem;
     border-radius: 0.375rem;
     background-color: white;
-    border: 2px solid #e4947b;
+    border: 2px solid rgba(30, 41, 59, 1);
     display: flex;
     align-items: center;
     justify-content: center;

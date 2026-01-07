@@ -146,7 +146,7 @@ export default function CreateQuizPage() {
                         {questions.map((question, qIndex) => (
                             <Card
                                 key={qIndex}
-                                className="shadow-sm mt-6"
+                                className="shadow-sm mt-6 white-background-create"
                                 variant="default"
                                 padding="md"
                             >
