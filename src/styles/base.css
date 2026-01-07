@@ -54,6 +54,13 @@
     --transition-fast: 0.15s ease;
     --transition-normal: 0.2s ease;
     --transition-slow: 0.3s ease;
+
+    /* Scroll bar */
+    --sb-track-color: transparent;
+    --sb-thumb-color: rgba(255, 255, 255, 0.2); /* Soft white for dark mode */
+    --sb-thumb-hover: rgba(255, 255, 255, 0.35);
+    --sb-size: 8px; /* Slim and elegant */
+}
 }
 
 /* Reset */
