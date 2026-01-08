@@ -127,7 +127,7 @@
 .quiz-card-info {
     background-color: rgb(210, 228, 255);
     width: 100%;
-    padding: 0.5rem 0.2rem 0.2rem;
+    padding: 0.5rem 0.25rem;
     border-radius: 0.75rem;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.25);
 }
