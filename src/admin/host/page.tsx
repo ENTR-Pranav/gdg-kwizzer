@@ -261,7 +261,7 @@ function GameHost({ game, quiz }: { game: Game; quiz: Quiz }) {
       await GameTimer.startQuestionTimer(game.id, timeLimit);
 
       console.log(
-        "[GameHost] Game started successfully with server-side timer"
+        "[GameHost] Game started successfully with server-side timer",
       );
     } catch (error) {
       console.error("[GameHost] Failed to start game:", error);
@@ -275,20 +275,25 @@ function GameHost({ game, quiz }: { game: Game; quiz: Quiz }) {
     setProcessing(true);
     try {
       console.log("[GameHost] Manually transitioning to results phase");
-      
+
       // Clear the timer since we're ending early
       GameTimer.clearTimer(game.id);
-      
+
       // Calculate scores for the current question (important when ending early)
-      await GameTimer.calculateAndUpdateScores(game.id, currentGame.currentQuestionIndex || 0);
-      
+      await GameTimer.calculateAndUpdateScores(
+        game.id,
+        currentGame.currentQuestionIndex || 0,
+      );
+
       // Update the game phase to results
-      await firestoreService.updateGame(game.id, { 
+      await firestoreService.updateGame(game.id, {
         phase: "results",
-        timeLeft: 0
+        timeLeft: 0,
       });
-      
-      console.log("[GameHost] Successfully transitioned to results phase with scores calculated");
+
+      console.log(
+        "[GameHost] Successfully transitioned to results phase with scores calculated",
+      );
     } catch (error) {
       console.error("[GameHost] Error showing results:", error);
     } finally {
@@ -302,7 +307,7 @@ function GameHost({ game, quiz }: { game: Game; quiz: Quiz }) {
     try {
       // Reset showAnswer state when moving to next question
       setShowAnswer(false);
-      
+
       const nextIndex = currentGame.currentQuestionIndex + 1;
       if (nextIndex >= quiz.questions.length) {
         // Game ended
@@ -404,9 +409,7 @@ function GameHost({ game, quiz }: { game: Game; quiz: Quiz }) {
                     disabled={processing}
                     className="host-control-button"
                   >
-                    {processing
-                      ? "Processing..."
-                      : "Show Results"}
+                    {processing ? "Processing..." : "Show Results"}
                   </button>
                 ) : (
                   <button
@@ -417,9 +420,9 @@ function GameHost({ game, quiz }: { game: Game; quiz: Quiz }) {
                     {processing
                       ? "Loading..."
                       : currentGame.currentQuestionIndex + 1 >=
-                        quiz.questions.length
-                      ? "End Game"
-                      : "Next Question →"}
+                          quiz.questions.length
+                        ? "End Game"
+                        : "Next Question →"}
                   </button>
                 )}
               </div>
