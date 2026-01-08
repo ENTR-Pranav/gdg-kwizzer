@@ -15,8 +15,8 @@
 
 .join-page-title {
     font-size: 1.875rem;
-    font-weight: 500;
-    color: white;
+    font-weight: 600;
+    color: rgba(53, 106, 160, 0.9);
 }
 
 .join-page-signin-message {
@@ -34,7 +34,7 @@
 .join-game-pin-display {
     text-align: center;
     padding: 1rem;
-    border: 3px solid rgb(248, 90, 95);
+    border: 3px solid rgba(53, 106, 160, 1);
     border-radius: var(--radius-lg);
     background-color: floralwhite;
 }
@@ -47,7 +47,7 @@
 .join-game-pin-value {
     font-size: 1.875rem;
     font-weight: 900;
-    color: black;
+    color: rgba(30, 41, 59, 1);
     letter-spacing: 0.1em;
 }
 
@@ -57,12 +57,12 @@
 }
 
 .join-back-home-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
     font-size: 0.875rem;
     text-decoration: none;
     transition: color var(--transition-normal);
 }
 
 .join-back-home-link:hover {
-    color: white;
+    color: black;
 }

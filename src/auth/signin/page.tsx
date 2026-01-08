@@ -44,6 +44,7 @@ export default function SignInPage() {
 
     return (
         <div className="auth-container">
+            <h1 className={"home-title"}>KWIZZER</h1>
             <form onSubmit={handleSubmit} className="auth-form">
                 <div className={"centered"}>
                     <h1 className="auth-title">Sign In</h1>

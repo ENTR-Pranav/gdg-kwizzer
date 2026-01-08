@@ -38,12 +38,9 @@
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.1em;
-    border-top: 3px solid rgb(191, 125, 127);
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-radius: var(--radius-lg);
-    background-color: floralwhite;
+    background-color: rgba(217, 217, 217, 1);
     color: black;
     transition: all var(--transition-normal);
 }
@@ -54,7 +51,7 @@
 
 .join-pin-input:focus {
     outline: none;
-    border: 3px solid rgb(248, 90, 95);
+    border: 3px solid rgba(53, 106, 160, 0.7);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
@@ -64,7 +61,7 @@
     text-align: center;
     font-size: 1.125rem;
     font-weight: 500;
-    border: 3px solid rgb(248, 90, 95);
+    border: 3px solid rgba(53, 106, 160, 1);
     border-radius: var(--radius-lg);
     background-color: floralwhite;
     color: black;

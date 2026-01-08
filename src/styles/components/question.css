@@ -54,7 +54,7 @@
 
 .question-box {
     background-color: #e3e3e3;
-    color: black;
+    color: rgba(30, 41, 59, 1);
     padding: 2rem;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-xl);
@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid rgba(53, 106, 160, 1);
 }
 
 @media (min-width: 768px) {

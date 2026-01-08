@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background: rgba(216, 200, 200, 1);
+    background: rgba(53, 106, 160, 0.5);
 }
 
 .leaderboard-title {
@@ -55,7 +55,7 @@
     padding: 1rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color var(--transition-normal);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(53, 106, 160, 0.1);
 }
 
 .leaderboard-entry:last-child {
@@ -113,7 +113,7 @@
 
 .leaderboard-player-name {
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(30, 41, 59, 1);
 }
 
 .leaderboard-player-name.current {
@@ -133,7 +133,7 @@
 .leaderboard-score {
     font-family: monospace;
     font-weight: 500;
-    color: white;
+    color: rgba(30, 41, 59, 1);
     font-size: 1.125rem;
 }
 
@@ -145,12 +145,9 @@
     padding: 0 1rem 3rem;
     margin: 2rem 0 1rem;
     border-radius: 0.75rem;
-    background: radial-gradient(
-            ellipse 100% 70% at 100% 0%,
-            var(--glow-smoky) 10%, /* Spreads the brightness to half the page */ var(--glass-blue) 100% /* Soft finish at the bottom-left */
-    ) !important;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    background: transparent;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.25);
 }
 
 .podium-step {
@@ -210,12 +207,14 @@
     font-weight: bold;
     margin-bottom: 8px;
     text-align: center;
+    color: rgba(30, 41, 59, 1);
 }
 
 .podium-score {
     margin-top: 8px;
     font-size: 0.9rem;
     font-weight: 600;
+    color: rgba(53, 106, 160, 1);
 }
 
 .podium-empty {

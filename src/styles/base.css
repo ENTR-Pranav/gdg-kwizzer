@@ -156,7 +156,7 @@ img {
 }
 
 .game-page-text {
-    color: white;
+    color: rgba(53, 106, 160, 0.9);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 1.25rem;
 }
