@@ -3,16 +3,11 @@
    ============================================ */
 
 :root {
-    /* Core Theme - Overriding the white defaults */
-    --background: #0b121e; /* Deep dark blue base */
-    --foreground: #ffffff; /* Pure white for text */
-
-    /* Gradient Specifics for Template 2 */
+    --background: #ffffff;
+    --foreground: #ffffff;
     --back-white: #d8e2ed;
-
-    /* Branding & Components */
-    --primary: #3b82f6; /* The blue for your buttons */
-    --secondary: rgba(26, 36, 53, 0.6); /* Semi-transparent cards */
+    --primary: #3b82f6;
+    --secondary: rgba(26, 36, 53, 0.6);
     --border: rgba(255, 255, 255, 0.1);
 
     /* Color palette */
