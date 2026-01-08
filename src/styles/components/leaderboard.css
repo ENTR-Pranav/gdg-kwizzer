@@ -123,7 +123,7 @@
 .leaderboard-you-badge {
     margin-left: 0.5rem;
     font-size: 0.75rem;
-    background-color: black;
+    background-color: rgba(53, 106, 160, 1);
     color: white;
     padding: 0.125rem 0.5rem;
     border-radius: 9999px;
