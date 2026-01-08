@@ -97,7 +97,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.1) !important;
     padding: 0.5rem 0.5rem 0.75rem 0.75rem;
 }
-* 1. Chrome, Safari, and Edge (Webkit) */
+
 .scrollable-player::-webkit-scrollbar {
     width: var(--sb-size);
     height: var(--sb-size); /* For horizontal scroll */
