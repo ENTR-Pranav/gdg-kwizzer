@@ -118,7 +118,7 @@ function HostPageContent() {
             <p className="host-setup-subtitle">Set up and launch your quiz</p>
           </div>
           <Link to="/admin/quizzes">
-            <Button size="sm">← Back</Button>
+            <Button size="sm" className="quizzes-back-button">← Back</Button>
           </Link>
         </div>
 

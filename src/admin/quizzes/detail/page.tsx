@@ -147,10 +147,10 @@ export default function QuizDetailPage() {
           </div>
           <div className="quiz-detail-button-group">
             <Link to="/admin/quizzes">
-              <Button size="sm">← Back</Button>
+              <Button size="sm" className="quiz-detail-back-button">← Back</Button>
             </Link>
             <Link to={`/admin/host?quiz=${quiz.id}`}>
-              <Button size="sm">Host Quiz</Button>
+              <Button size="sm" className="quiz-detail-host-button">Host Quiz</Button>
             </Link>
             <Button
               size="sm"

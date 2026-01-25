@@ -222,7 +222,7 @@ export default function GamePage() {
 
           {selectedAnswer !== null && !answerSubmitted && (
             <div className="game-submit-section">
-              <Button onClick={submitAnswer} className="w-full max-w-xs">
+              <Button onClick={submitAnswer} className="w-full max-w-xs standard-button">
                 Submit Answer
               </Button>
             </div>
@@ -426,7 +426,7 @@ export default function GamePage() {
           )}
 
           <div className="game-over-action">
-            <Button onClick={() => navigate("/")} className="w-full max-w-xs">
+            <Button onClick={() => navigate("/")} className="w-full max-w-xs standard-button">
               Back to Home
             </Button>
           </div>

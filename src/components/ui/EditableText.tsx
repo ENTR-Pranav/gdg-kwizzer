@@ -114,8 +114,9 @@ export function EditableText({
               size="icon" 
               onClick={handleSave} 
               disabled={saving || !isValid} 
-              className="h-10 w-10 shrink-0" 
+              className="h-10 w-10 shrink-0 quiz-edit-save-button" 
               title="Save"
+
             >
               <Check className="h-4 w-4" />
             </Button>
@@ -124,7 +125,7 @@ export function EditableText({
               variant="outline"
               onClick={handleCancel}
               disabled={saving}
-              className="h-10 w-10 shrink-0"
+              className="h-10 w-10 shrink-0 quiz-edit-cancel-button"
               title="Cancel"
             >
               <X className="h-4 w-4" />
