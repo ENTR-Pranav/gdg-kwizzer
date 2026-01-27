@@ -1,0 +1,117 @@
+/* ===== Base Card ===== */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e2e6ea;
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.12),
+        0 4px 10px rgba(0, 0, 0, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* ===== Variants ===== */
+.card--default {
+    background: #ffffff;
+}
+
+.card--glass {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(16px);
+}
+
+.card--bordered {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* ===== Padding ===== */
+.card--p-none {
+    padding: 0;
+}
+
+.card--p-sm {
+    padding: 8px;
+}
+
+.card--p-md {
+    padding: 16px;
+}
+
+.card--p-lg {
+    padding: 24px;
+}
+
+.card--p-xl {
+    padding: 32px;
+}
+
+.card--p-2xl {
+    padding: 40px;
+}
+
+.card--p-3xl {
+    padding: 48px;
+}
+
+.card--p-4xl {
+    padding: 64px;
+}
+
+.card--p-5xl {
+    padding: 80px;
+}
+
+.card--p-6xl {
+    padding: 96px;
+}
+
+.card--p-7xl {
+    padding: 128px;
+}
+
+/* ===== Margin ===== */
+.card--m-none {
+    margin-bottom: 0;
+}
+
+.card--m-sm {
+    margin-bottom: 8px;
+}
+
+.card--m-md {
+    margin-bottom: 16px;
+}
+
+.card--m-lg {
+    margin-bottom: 24px;
+}
+
+.card--m-xl {
+    margin-bottom: 32px;
+}
+
+.card--m-2xl {
+    margin-bottom: 40px;
+}
+
+.card--m-3xl {
+    margin-bottom: 48px;
+}
+
+.card--m-4xl {
+    margin-bottom: 64px;
+}
+
+.card--m-5xl {
+    margin-bottom: 80px;
+}
+
+.card--m-6xl {
+    margin-bottom: 96px;
+}
+
+.card--m-7xl {
+    margin-bottom: 128px;
+}
