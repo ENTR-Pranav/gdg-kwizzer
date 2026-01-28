@@ -383,6 +383,7 @@
 }
 
 /* Host Control Buttons */
+
 .host-control-button {
     display: inline-flex;
     align-items: center;
@@ -514,6 +515,9 @@
 }
 
 /* Create Quiz Buttons */
+
+
+/* Create Quiz Buttons */
 .create-add-button {
     background: none;
     border: none;
@@ -523,7 +527,6 @@
     font-size: 0.9rem;
     cursor: pointer;
 }
-
 .create-cancel-button {
     flex: 1;
 }
@@ -544,7 +547,6 @@
     transform: translateY(-2px) scale(1.01);
     color: white;
 }
-
 .create-submit-button {
     flex: 1;
 }
