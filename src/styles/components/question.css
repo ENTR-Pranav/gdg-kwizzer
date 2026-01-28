@@ -1,5 +1,5 @@
 /* ============================================
-   QUESTION TEXT COMPONENT
+   QUESTION TEXT COMPONENT – FIGMA COLOR SCHEME
    ============================================ */
 
 .question-container {
@@ -9,6 +9,10 @@
     margin-right: auto;
     margin-bottom: 2rem;
 }
+
+/* --------------------------------------------
+   Header
+--------------------------------------------- */
 
 .question-header {
     display: flex;
@@ -52,6 +56,10 @@
     font-size: 0.875rem;
 }
 
+/* --------------------------------------------
+   Question Box
+--------------------------------------------- */
+
 .question-box {
     background-color: #e3e3e3;
     color: black;
@@ -71,6 +79,10 @@
         padding: 3rem;
     }
 }
+
+/* --------------------------------------------
+   Question Text
+--------------------------------------------- */
 
 .question-title {
     font-size: 1.5rem;
